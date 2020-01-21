@@ -27,7 +27,7 @@ app.get('/', function (req, res, next) {
         if (err) {
             console.log("ERROR: " + err.message);
         }
-        res.render('sql2', {
+        res.render('index', {
             results: rows
         })
     })

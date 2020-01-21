@@ -6,7 +6,11 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
     body
         script(type="text/javascript" src="js/materialize.min.js")
+        br
+        div(style = "margin-left:10%;margin-right:10%;")
+            input(type = "button" style="width:100%;padding:10px" onclick = "location.href = 'http://localhost:3000/'" value = "切り替え")
         div(class="container")
+            p データベースの動画のうち、takeがチャンネル登録しているチャンネルの動画を再生回数の多い順に表示しています
             each row in results
                 div(class="row")
                     div(class = "movie_image")
@@ -27,7 +31,7 @@ html
                             |・#{row['views']}回再生
                             |・#{row['datetime']} 
                             br
-                            br
+                            
                 
                             
                         

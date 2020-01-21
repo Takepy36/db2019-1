@@ -5,10 +5,14 @@ html
         link(rel="stylesheet" href="css/app.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
     body
-        script(type="text/javascript" src="js/materialize.min.js")
+        script(type="text/javascript" src="js/materialize.min.js")    
+        br
+        div(style = "margin-left:10%;margin-right:10%;")
+            input(type = "button" style="width:100%;padding:10px" onclick = "location.href = 'http://localhost:3000/index2'" value = "切り替え")
         div(class="container")
+            p データベースの動画を全て表示しています
             each row in results
-                div(class="row")
+                div(class="row")         
                     div(class = "movie_image")
                         br
                         img(class="thumbnail_pic" src="pic/"+row['thumbnail'])
